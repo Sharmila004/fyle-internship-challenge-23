@@ -1,0 +1,26 @@
+<div *ngIf="userDetail" class="profile-container">
+  <div class="profile-header">
+    <div class="profile-image">
+      <img [src]="imgurl" alt="User Image">
+    </div>
+    <div class="profile-info">
+      <h2>{{ name }}</h2>
+      <p>{{ bio }}</p>
+      <p>Company: {{ company }}</p>
+      <p>Followers: {{ followers }}</p>
+      <p>Location: {{ location }}</p>
+      <p style="color: blue;">Profile: {{ profile_link }}</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="repositories">
+    <h3>Repositories:</h3>
+    <div class="repo-list">
+      <div class="repo-item" *ngFor="let repo of repositories">
+        <a [href]="repo.html_url" target="_blank">{{ repo.name }}</a>
+      </div>
+    </div>
+  </div>
+</div>

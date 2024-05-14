@@ -1,0 +1,37 @@
+/* app.component.css */
+div {
+    text-align: center;
+}
+
+h1 {
+    color: blue;
+    font-size: 50px;
+    font-weight: 500;
+    background-color: bisque;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid blue;
+    border-radius: 20px;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
